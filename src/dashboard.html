@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/styles/dashboard.css">
+    <link rel="shortcut icon" href="/src/assets/icons/favicon.ico" type="image/x-icon">
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <div id="main">
+        <h1 id="welcome"></h1>
+        <p id="userEmail"></p>
+        <button id="logout">Sair</button>
+
+        <form id="todoForm">
+            <input type="text" id="todoTitle" placeholder="Nova tarefa" required>
+            <select id="todoPriority">
+                <option value="alta">🔴 Alta</option>
+                <option value="media" selected>🟡 Média</option>
+                <option value="baixa">🟢 Baixa</option>
+            </select>
+
+            <button type="submit">Adicionar</button>
+        </form>
+
+        <ul id="todoList"></ul>
+    </div>
+
+    <script src="../dist/ts/dashboard.js"></script>
+</body>
+
+</html>
